@@ -82,9 +82,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Controllers\UsersController.cs" />
+    <Compile Include="API\Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="TestController.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
