@@ -5,7 +5,7 @@ using E5R.AspNet.WebApi.Owin.API.Models;
 
 namespace E5R.AspNet.WebApi.Owin.API.Controllers
 {
-    [RoutePrefix("user")]
+    [RoutePrefix("api/user")]
     public class UsersController : ApiController
     {
         private static List<User> _users = new List<User>
