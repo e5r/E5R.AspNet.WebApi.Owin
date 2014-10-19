@@ -1,5 +1,7 @@
 ﻿using Owin;
 using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.Routing;
 
 // TODO: E5R.Learning.AspNetWebApiOwin
 namespace E5R.AspNet.WebApi.Owin
@@ -13,6 +15,17 @@ namespace E5R.AspNet.WebApi.Owin
             config.MapHttpAttributeRoutes();
 
             app.UseWebApi(config);
+
+            RouteTable.Routes.MapRoute(
+                name: "MvcRoute",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "home",
+                    action = "index",
+                    id = UrlParameter.Optional
+                }
+            );
         }
     }
 }
