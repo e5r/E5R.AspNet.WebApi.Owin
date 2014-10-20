@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>E5R.AspNet.WebApi.Owin</id>
+    <version>0.0.1</version>
+    <authors>Erlimar Silva Campos</authors>
+    <owners>E5R Development Team</owners>
+    <licenseUrl>https://raw.githubusercontent.com/e5r/E5R.AspNet.WebApi.Owin/step9/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/e5r/E5R.AspNet.WebApi.Owin</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/e5r/miv/master/dist/e5rlogo-avatar-xs.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft.AspNet.WebApi with Owin Bootstrapper for .NET web projects</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright (C) 2014 E5R Development Team</copyright>
+    <tags>aspnet webapi api owin dotnet microsoft e5r bootstrapper</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <!--WebApi-->
+        <dependency id="Microsoft.AspNet.WebApi" version="5.2.0"/>
+        <dependency id="Microsoft.AspNet.WebApi.Owin" version="5.2.0" />
+        <!--Mvc-->
+        <dependency id="Microsoft.AspNet.Mvc" version="5.2.0" />
+        <!--IIS-->
+        <dependency id="Microsoft.Owin.Host.SystemWeb" version="2.1.0" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="src\E5R.AspNet.WebApi.Owin\Startup.cs.pp" target="content\Startup.cs" />
+    <file src="src\E5R.AspNet.WebApi.Owin\Web.config.transform" target="content\Web.config" />
+  </files>
+</package>
