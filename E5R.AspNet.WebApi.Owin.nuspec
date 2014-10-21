@@ -2,10 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>E5R.AspNet.WebApi.Owin</id>
-    <version>0.0.1</version>
+    <title>E5R for Microsoft.AspNet.WebApi with Owin Bootstrapper</title>
+    <version>0.0.3</version>
     <authors>Erlimar Silva Campos</authors>
     <owners>E5R Development Team</owners>
-    <licenseUrl>https://raw.githubusercontent.com/e5r/E5R.AspNet.WebApi.Owin/step9/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/e5r/E5R.AspNet.WebApi.Owin/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/e5r/E5R.AspNet.WebApi.Owin</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/e5r/miv/master/dist/e5rlogo-avatar-xs.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -29,7 +30,7 @@
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="src\E5R.AspNet.WebApi.Owin\Startup.cs.pp" target="content\Startup.cs" />
-    <file src="src\E5R.AspNet.WebApi.Owin\Web.config.transform" target="content\Web.config" />
+    <file src="src\E5R.AspNet.WebApi.Owin\Startup.cs.pp" target="content" />
+    <file src="src\E5R.AspNet.WebApi.Owin\Web.config.transform" target="content" />
   </files>
 </package>
